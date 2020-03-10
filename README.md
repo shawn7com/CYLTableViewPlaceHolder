@@ -1,6 +1,6 @@
 # CYLTableViewPlaceHolder【一行代码完成“空TableView占位视图”管理】
 
-<p align="center">
+<a align="center">
 ![pod-v1.0.6](https://img.shields.io/badge/pod-v1.0.6-brightgreen.svg)
 ![Objective--C-compatible](https://img.shields.io/badge/Objective--C-compatible-orange.svg)   ![platform-iOS-6.0+](https://img.shields.io/badge/platform-iOS%206.0%2B-ff69b4.svg)
 </a>
@@ -14,6 +14,9 @@
   5.  [ 适用于多种应用应用场景 ](https://github.com/ChenYilong/CYLTableViewPlaceHolder#适用于多种应用应用场景) 
    1.  [ 网络故障 ](https://github.com/ChenYilong/CYLTableViewPlaceHolder#网络故障) 
    2.  [ 暂无数据 ](https://github.com/ChenYilong/CYLTableViewPlaceHolder#暂无数据) 
+
+
+UITableView & UICollectionView 无数据时的placeholder view，forked from [CYLTableViewPlaceHolder](https://github.com/ChenYilong/CYLTableViewPlaceHolder)
 
 
 ## 与其他框架的区别
