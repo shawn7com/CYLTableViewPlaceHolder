@@ -6,13 +6,13 @@
 
 ## 导航
 
-  1.  [ 与其他框架的区别 ](https://github.com/ChenYilong/CYLTableViewPlaceHolder#与其他框架的区别) 
-  2.  [ 集成后的效果 ](https://github.com/ChenYilong/CYLTableViewPlaceHolder#集成后的效果) 
-  3.  [ 使用CYLTableViewPlaceHolder ](https://github.com/ChenYilong/CYLTableViewPlaceHolder#使用cyltableviewplaceholder) 
-  4.  [ 运行Demo ](https://github.com/ChenYilong/CYLTableViewPlaceHolder#运行demo) 
-  5.  [ 适用于多种应用应用场景 ](https://github.com/ChenYilong/CYLTableViewPlaceHolder#适用于多种应用应用场景) 
-   1.  [ 网络故障 ](https://github.com/ChenYilong/CYLTableViewPlaceHolder#网络故障) 
-   2.  [ 暂无数据 ](https://github.com/ChenYilong/CYLTableViewPlaceHolder#暂无数据) 
+  1.  [ 与其他框架的区别 ](#与其他框架的区别) 
+  2.  [ 集成后的效果 ](#集成后的效果) 
+  3.  [ 使用CYLTableViewPlaceHolder ](#使用cyltableviewplaceholder) 
+  4.  [ 运行Demo ](#运行demo) 
+  5.  [ 适用于多种应用应用场景 ](#适用于多种应用应用场景) 
+   1.  [ 网络故障 ](#网络故障) 
+   2.  [ 暂无数据 ](#暂无数据) 
 
 
 UITableView & UICollectionView 无数据时的placeholder view，forked from [CYLTableViewPlaceHolder](https://github.com/ChenYilong/CYLTableViewPlaceHolder)
@@ -39,9 +39,9 @@ UITableView & UICollectionView 无数据时的placeholder view，forked from [CY
 
 三步完成：
 
-  1.  [ 第一步：使用cocoaPods导入CYLTableViewPlaceHolder ](https://github.com/ChenYilong/CYLTableViewPlaceHolder#第一步使用cocoapods导入cyltableviewplaceholder) 
-  2.  [第二步：遵循协议](https://github.com/ChenYilong/CYLTableViewPlaceHolder#第二步遵循协议) 
-  3.  [第三步：使用cyl_reloadData代替reloadData](https://github.com/ChenYilong/CYLTableViewPlaceHolder#第三步使用cyl_reloaddata代替reloaddata) 
+  1.  [ 第一步：使用cocoaPods导入CYLTableViewPlaceHolder ](#第一步使用cocoapods导入cyltableviewplaceholder) 
+  2.  [第二步：遵循协议](#第二步遵循协议) 
+  3.  [第三步：使用cyl_reloadData代替reloadData](#第三步使用cyl_reloaddata代替reloaddata) 
 
 
 ### 第一步：使用CocoaPods导入CYLTableViewPlaceHolder
@@ -186,9 +186,9 @@ open CYLTableViewPlaceHolder.xcworkspace
 
 [CYLTableViewPlaceHolder](https://github.com/ChenYilong/CYLTableViewPlaceHolder) 是基于  `dataSource`  数据源是否为空，所以只需操作  `dataSource`  数据源，即可完成占位视图的 `。只要为空就会触发。并且每次在操作占位视图的 `addSubview` 和 `removeFromSuperview` 时，每次都会将旧的销毁，并触发 `- (UIView *)makePlaceHolderView` 创建一个新的视图。如果在该方法中进行 if 判断，也就能适用于不同的场景。
 
-   1.  [ 网络故障 ](https://github.com/ChenYilong/CYLTableViewPlaceHolder#网络故障) 
-    1.  [ 网络不可用，禁止重新加载 ](https://github.com/ChenYilong/CYLTableViewPlaceHolder#网络不可用禁止重新加载) 
-   2.  [ 暂无数据 ](https://github.com/ChenYilong/CYLTableViewPlaceHolder#暂无数据) 
+   1.  [ 网络故障 ](#网络故障) 
+    1.  [ 网络不可用，禁止重新加载 ](#网络不可用禁止重新加载) 
+   2.  [ 暂无数据 ](#暂无数据) 
 
 ### 网络故障
 
