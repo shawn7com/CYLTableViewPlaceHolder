@@ -6,7 +6,7 @@
 //  Copyright © 2015年 https://github.com/ChenYilong . All rights reserved.
 //
 
-@protocol CYLTableViewPlaceHolderDelegate <NSObject>
+@protocol CYLScrollViewPlaceHolderDelegate <NSObject>
 
 @required
 /*!

@@ -6,12 +6,12 @@
 //  Copyright © 2015年 https://github.com/ChenYilong . All rights reserved.
 //
 
-#import "UITableView+CYLTableViewPlaceHolder.h"
-#import "CYLTableViewPlaceHolderDelegate.h"
+#import "UIScrollView+CYLScrollViewPlaceHolder.h"
+#import "CYLScrollViewPlaceHolderDelegate.h"
 
 #import <objc/runtime.h>
 
-@interface UITableView ()
+@interface UIScrollView ()
 
 @property (nonatomic, assign) BOOL scrollWasEnabled;
 @property (nonatomic, strong) UIView *placeHolderView;
@@ -39,26 +39,52 @@
 }
 
 - (void)cyl_reloadData {
-    [self reloadData];
-    [self cyl_checkEmpty];
+    if ([self isKindOfClass:[UICollectionView class]]
+        || [self isKindOfClass:[UITableView class]]) {
+        [self performSelector:@selector(reloadData)];
+        [self cyl_checkEmpty];
+    }
 }
 
 - (void)cyl_checkEmpty {
     BOOL isEmpty = YES;
     
-    id<UITableViewDataSource> src = self.dataSource;
-    NSInteger sections = 1;
-    if ([src respondsToSelector: @selector(numberOfSectionsInTableView:)]) {
-        sections = [src numberOfSectionsInTableView:self];
-    }
-    for (int i = 0; i<sections; ++i) {
-        NSInteger rows = [src tableView:self numberOfRowsInSection:i];
-        if (rows) {
-            isEmpty = NO;
-            break;
-        }
+    if ([self isKindOfClass:[UICollectionView class]]) {
+        UICollectionView *cv = (UICollectionView *)self;
         
+        id<UICollectionViewDataSource> src = cv.dataSource;
+        
+        NSInteger sections = 1;
+        if ([src respondsToSelector: @selector(numberOfSectionsInCollectionView:)]) {
+            sections = [src numberOfSectionsInCollectionView:cv];
+        }
+        for (int i = 0; i<sections; ++i) {
+            NSInteger rows = [src collectionView:cv numberOfItemsInSection:i];
+            if (rows) {
+                isEmpty = NO;
+                break;
+            }
+        }
     }
+    
+    if ([self isKindOfClass:[UITableView class]]) {
+        UITableView *tv = (UITableView *)self;
+        
+        id<UITableViewDataSource> src = tv.dataSource;
+        
+        NSInteger sections = 1;
+        if ([src respondsToSelector: @selector(numberOfSectionsInTableView:)]) {
+            sections = [src numberOfSectionsInTableView:tv];
+        }
+        for (int i = 0; i<sections; ++i) {
+            NSInteger rows = [src tableView:tv numberOfRowsInSection:i];
+            if (rows) {
+                isEmpty = NO;
+                break;
+            }
+        }
+    }
+    
     if (!isEmpty != !self.placeHolderView) {
         if (isEmpty) {
             self.scrollWasEnabled = self.scrollEnabled;

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9A68F2E61C2A67E800D2E9B0 /* UITableView+CYLTableViewPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A68F2E51C2A67E800D2E9B0 /* UITableView+CYLTableViewPlaceHolder.m */; };
+		9A68F2E61C2A67E800D2E9B0 /* UIScrollView+CYLScrollViewPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A68F2E51C2A67E800D2E9B0 /* UIScrollView+CYLScrollViewPlaceHolder.m */; };
 		9A68F2F61C2A67F700D2E9B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A68F2E91C2A67F600D2E9B0 /* AppDelegate.m */; };
 		9A68F2F71C2A67F700D2E9B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A68F2EA1C2A67F600D2E9B0 /* Assets.xcassets */; };
 		9A68F2F81C2A67F700D2E9B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A68F2EB1C2A67F700D2E9B0 /* LaunchScreen.storyboard */; };
@@ -23,10 +23,10 @@
 		74224AFF19B3C33D313756FC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F27CE38CFEAC36D07942C50 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8BD37F2AD1CB081E05776118 /* Pods-CYLTableViewPlaceHolder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYLTableViewPlaceHolder.release.xcconfig"; path = "Pods/Target Support Files/Pods-CYLTableViewPlaceHolder/Pods-CYLTableViewPlaceHolder.release.xcconfig"; sourceTree = "<group>"; };
-		9A68F2E21C2A67E800D2E9B0 /* CYLTableViewPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTableViewPlaceHolder.h; sourceTree = "<group>"; };
-		9A68F2E31C2A67E800D2E9B0 /* CYLTableViewPlaceHolderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTableViewPlaceHolderDelegate.h; sourceTree = "<group>"; };
-		9A68F2E41C2A67E800D2E9B0 /* UITableView+CYLTableViewPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+CYLTableViewPlaceHolder.h"; sourceTree = "<group>"; };
-		9A68F2E51C2A67E800D2E9B0 /* UITableView+CYLTableViewPlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+CYLTableViewPlaceHolder.m"; sourceTree = "<group>"; };
+		9A68F2E21C2A67E800D2E9B0 /* CYLScrollViewPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLScrollViewPlaceHolder.h; sourceTree = "<group>"; };
+		9A68F2E31C2A67E800D2E9B0 /* CYLScrollViewPlaceHolderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLScrollViewPlaceHolderDelegate.h; sourceTree = "<group>"; };
+		9A68F2E41C2A67E800D2E9B0 /* UIScrollView+CYLScrollViewPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+CYLScrollViewPlaceHolder.h"; sourceTree = "<group>"; };
+		9A68F2E51C2A67E800D2E9B0 /* UIScrollView+CYLScrollViewPlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+CYLScrollViewPlaceHolder.m"; sourceTree = "<group>"; };
 		9A68F2E81C2A67F600D2E9B0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9A68F2E91C2A67F600D2E9B0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9A68F2EA1C2A67F600D2E9B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,10 +79,10 @@
 		9A68F2E11C2A67E800D2E9B0 /* CYLTableViewPlaceHolder */ = {
 			isa = PBXGroup;
 			children = (
-				9A68F2E21C2A67E800D2E9B0 /* CYLTableViewPlaceHolder.h */,
-				9A68F2E31C2A67E800D2E9B0 /* CYLTableViewPlaceHolderDelegate.h */,
-				9A68F2E41C2A67E800D2E9B0 /* UITableView+CYLTableViewPlaceHolder.h */,
-				9A68F2E51C2A67E800D2E9B0 /* UITableView+CYLTableViewPlaceHolder.m */,
+				9A68F2E21C2A67E800D2E9B0 /* CYLScrollViewPlaceHolder.h */,
+				9A68F2E31C2A67E800D2E9B0 /* CYLScrollViewPlaceHolderDelegate.h */,
+				9A68F2E41C2A67E800D2E9B0 /* UIScrollView+CYLScrollViewPlaceHolder.h */,
+				9A68F2E51C2A67E800D2E9B0 /* UIScrollView+CYLScrollViewPlaceHolder.m */,
 			);
 			path = CYLTableViewPlaceHolder;
 			sourceTree = "<group>";
@@ -192,6 +192,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -239,7 +240,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CYLTableViewPlaceHolder/Pods-CYLTableViewPlaceHolder-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-CYLTableViewPlaceHolder/Pods-CYLTableViewPlaceHolder-resources.sh",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -248,7 +249,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYLTableViewPlaceHolder/Pods-CYLTableViewPlaceHolder-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CYLTableViewPlaceHolder/Pods-CYLTableViewPlaceHolder-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		990C3B2C4C20ECB5C082754B /* [CP] Check Pods Manifest.lock */ = {
@@ -278,7 +279,7 @@
 			files = (
 				9A68F2F61C2A67F700D2E9B0 /* AppDelegate.m in Sources */,
 				9A68F2FB1C2A67F700D2E9B0 /* main.m in Sources */,
-				9A68F2E61C2A67E800D2E9B0 /* UITableView+CYLTableViewPlaceHolder.m in Sources */,
+				9A68F2E61C2A67E800D2E9B0 /* UIScrollView+CYLScrollViewPlaceHolder.m in Sources */,
 				9A91C4701C2A88290007284C /* WeChatStylePlaceHolder.m in Sources */,
 				9A68F2FC1C2A67F700D2E9B0 /* ViewController.m in Sources */,
 				9A91C46D1C2A88020007284C /* XTNetReloader.m in Sources */,

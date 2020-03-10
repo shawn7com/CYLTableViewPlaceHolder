@@ -14,7 +14,7 @@
 static const CGFloat CYLDuration = 1.0;
 #define CYLRandomData [NSString stringWithFormat:@"随机数据---%d", arc4random_uniform(1000000)]
 
-@interface ViewController ()<CYLTableViewPlaceHolderDelegate, WeChatStylePlaceHolderDelegate>
+@interface ViewController ()<CYLScrollViewPlaceHolderDelegate, WeChatStylePlaceHolderDelegate>
 @property (nonatomic, strong) NSMutableArray *dataSource;
 @property (nonatomic, assign, getter=isNoResult) BOOL noResult;
 

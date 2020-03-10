@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UITableView (CYLTableViewPlaceHolder)
+@interface UIScrollView (CYLScrollViewPlaceHolder)
 
 /*!
  @brief just use this method to replace `reloadData` ,and it can help you to add or remove place holder view automatically

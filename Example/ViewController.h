@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CYLTableViewPlaceHolder.h"
+#import "CYLScrollViewPlaceHolder.h"
 
 @interface ViewController : UITableViewController
 

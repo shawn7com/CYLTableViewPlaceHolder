@@ -6,5 +6,5 @@
 //  Copyright © 2015年 https://github.com/ChenYilong . All rights reserved.
 //
 
-#import "UITableView+CYLTableViewPlaceHolder.h"
-#import "CYLTableViewPlaceHolderDelegate.h"
+#import "UIScrollView+CYLScrollViewPlaceHolder.h"
+#import "CYLScrollViewPlaceHolderDelegate.h"
